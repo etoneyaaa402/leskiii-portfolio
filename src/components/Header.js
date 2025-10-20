@@ -27,11 +27,11 @@ function Header() {
 
   const Navigation = () => (
     <nav>
-      <a onClick={() => handleLinkClick('about')}>Обо мне</a>
-      <a onClick={() => handleLinkClick('maininfo')}>Навыки</a>
-      <a onClick={() => handleLinkClick('experience')}>Опыт</a>
-      <a onClick={() => handleLinkClick('portfolio')}>Портфолио</a>
-      <a onClick={() => handleLinkClick('footer')}>Контакты</a>
+      <button className="nav-button" onClick={() => handleLinkClick('about')}>Обо мне</button>
+      <button className="nav-button" onClick={() => handleLinkClick('maininfo')}>Навыки</button>
+      <button className="nav-button" onClick={() => handleLinkClick('experience')}>Опыт</button>
+      <button className="nav-button" onClick={() => handleLinkClick('portfolio')}>Портфолио</button>
+      <button className="nav-button" onClick={() => handleLinkClick('footer')}>Контакты</button>
     </nav>
   )
   return (

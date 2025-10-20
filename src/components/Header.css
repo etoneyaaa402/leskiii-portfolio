@@ -72,6 +72,18 @@ nav a:hover {
   text-decoration: none;
   transition: color 0.3s linear;
 }
+.nav-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'CoolveticaLt', Arial, sans-serif; 
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  text-align: inherit; 
+  transition: color 0.2s;
+}
 
 .close-menu-button {
   position: absolute; 
