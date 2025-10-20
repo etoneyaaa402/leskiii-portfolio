@@ -33,7 +33,7 @@ function Header() {
       )}
       <div className="name-container">
         <h1>Волгина <br />Олеся</h1> 
-        <img src={myPhoto} alt="my photo" className='meImg' />
+        <img src={myPhoto} alt="me" className='meImg' />
       </div>
       <p>Веб-разработчик / Frontend / UI/UX дизайнер</p>
 
