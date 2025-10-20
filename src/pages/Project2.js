@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import userFlow from '../assets/images/user-flow.png';
 import colorPalette from '../assets/images/colors.png';
 import typography from '../assets/images/text.png';
 import grid from '../assets/images/gridd.png';

@@ -1,9 +1,6 @@
-// src/components/Portfolio.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Импортируем все нужные изображения
 import laptopImg from '../assets/images/laptop_1.png';
 import partyImg from '../assets/images/party_3.png';
 import certificateImg from '../assets/images/certificate.png';
@@ -54,7 +51,7 @@ function Portfolio() {
                 </div>
                 <div className="work-desc">
                     <h3>Дизайн веб-сайта для компании <br/> логистических перевозок</h3>
-                    <p>Разработка адаптивного дизайна для компании, где основная цель: создание удобного и соответсвующего времени интерфейса для составления оптимального пути</p>
+                    <p>Разработка адаптивного дизайна для компании, где основная цель: создание удобного и соответсвующего времени интерфейса для составления оптимального пути </p>
                     <Link to="/project2" className="btn-project" aria-label="Подробнее о проекте 2">
                         Перейти к проекту
                     </Link>
