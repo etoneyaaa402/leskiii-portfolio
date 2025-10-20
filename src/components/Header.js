@@ -13,13 +13,25 @@ function Header() {
 
   console.log('Состояние меню (menuOpen):', menuOpen);
 
+  const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+  };
+
+  const handleLinkClick = (sectionId) => {
+    scrollToSection(sectionId);
+    setMenuOpen(false);
+  };
+
   const Navigation = () => (
     <nav>
-      <a href="#about" onClick={() => setMenuOpen(false)}>Обо мне</a>
-      <a href="#maininfo" onClick={() => setMenuOpen(false)}>Навыки</a>
-      <a href="#experience" onClick={() => setMenuOpen(false)}>Опыт</a>
-      <a href="#portfolio" onClick={() => setMenuOpen(false)}>Портфолио</a>
-      <a href="#footer" onClick={() => setMenuOpen(false)}>Контакты</a>
+      <a onClick={() => handleLinkClick('about')}>Обо мне</a>
+      <a onClick={() => handleLinkClick('maininfo')}>Навыки</a>
+      <a onClick={() => handleLinkClick('experience')}>Опыт</a>
+      <a onClick={() => handleLinkClick('portfolio')}>Портфолио</a>
+      <a onClick={() => handleLinkClick('footer')}>Контакты</a>
     </nav>
   )
   return (
